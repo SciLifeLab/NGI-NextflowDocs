@@ -25,5 +25,4 @@ Add to your `.bashrc`
 export NXF_HOME=$HOME/.nextflow
 export NXF_TEMP=${SNIC_TMP:-$HOME/glob/nxftmp}
 export NXF_WORK=$HOME/glob/work
-export NXF_LAUNCHBASE=${SNIC_TMP:-$HOME/glob/nxftmp}
 ```
