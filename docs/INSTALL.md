@@ -17,8 +17,6 @@ mkdir $HOME/.nextflow
 - `NXF_HOME` is Nextflow home directory (default: $HOME/.nextflow).
 - `NXF_TEMP` is where temporary files are stored.
 - `NXF_WORK` is where working files are stored (usually your scratch directory)
-- `NXF_LAUNCHBASE` provides a separate directory for launcher.
-- `NXF_OPTS` provides extra options for the Java and Nextflow runtime.
 
 Add to your `.bashrc`
 ```bash
