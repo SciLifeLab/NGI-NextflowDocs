@@ -1,9 +1,10 @@
 #!/usr/bin/env nextflow
+
+/*
 vim: syntax=groovy
 -*- mode: groovy;-*-
-/*
 ========================================================================================
-                                     Example Piepeline 
+                                     Example Pipeline
 ========================================================================================
  Example pipeline. Started December 2016.
  @Authors
@@ -11,13 +12,13 @@ vim: syntax=groovy
 ----------------------------------------------------------------------------------------
  Basic command:
  $ nextflow main.nf
- 
+
  Pipeline variables can be configured with the following command line options:
  --genome [GRCh37 | GRCm38]
  --index [path to STAR index]
  --gtf [path to GTF file]
  --files [path to input files]
- 
+
 ----------------------------------------------------------------------------------------
 */
 /*
@@ -25,7 +26,7 @@ vim: syntax=groovy
  */
 
 // Pipeline version
-version = 0.1 
+version = 0.1
 
 // Reference genome index
 params.genome = 'GRCh37'
