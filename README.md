@@ -10,6 +10,7 @@ See the [options documentation](docs/OPTIONS.md)
 ## Common configuration besides basic required stuff
 
 ## Best practices / snippets
+See [Example Pipeline](snippets/main.nf)
 
 ## Troubleshooting nextflow
-Check the `work` directory, and especially the last one (which is te one that failed) for information about the failed process, and if needed, you can go up the chain of processes.
+Check the `work` directory, and especially the last one (which is the one that failed) for information about the failed process, and if needed, you can go up the chain of processes.
