@@ -24,6 +24,30 @@ nextflow run SciLifeLab/repository -c file.config
 ```
 If no config file is specified, Nextflow will look for `$NXF_HOME/config` or for `nextflow.config` in your current directory.
 
+## profiles
+More informations on [Nextflow documentation](https://www.nextflow.io/docs/latest/config.html#config-profiles).
+A profile can be defined in `nextflow.config`, `includeConfig` can be use to include several config files.
+Example:
+```groovy
+profiles {
+  milou {
+    includeConfig 'configuration/standard.config'
+    includeConfig 'configuration/milou.config'
+    includeConfig 'configuration/milou-slurm.config'
+  }
+  bianca {
+    includeConfig 'configuration/standard.config'
+    includeConfig 'configuration/bianca.config'
+    includeConfig 'configuration/bianca-slurm.config'
+  }
+  milou_interactive {
+    includeConfig 'configuration/standard.config'
+    includeConfig 'configuration/milou.config'
+    includeConfig 'configuration/milou-local.config'
+  }
+}
+```
+
 ## clean
 Use the `clean -f` option to remove the files contained in the `work` directory from the last Nextflow execution.
 ```bash
