@@ -13,7 +13,7 @@ mkdir $HOME/glob/nxftmp
 mkdir $HOME/.nextflow
 ```
 
-## Configure environnement variables
+## Configure environment variables
 - `NXF_HOME` is Nextflow home directory (default: $HOME/.nextflow).
 - `NXF_TEMP` is where temporary files are stored.
 - `NXF_WORK` is where working files are stored (usually your scratch directory)
