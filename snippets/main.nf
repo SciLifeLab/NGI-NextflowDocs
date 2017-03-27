@@ -29,13 +29,9 @@ vim: syntax=groovy
 version = 0.1
 
 // Reference genome index
-params.genome = 'GRCh37'
+params.genome = false
 params.gtf   = params.genomes[ params.genome ].gtf
-params.bed12 = params.genomes[ params.genome ].bed12
 params.bowtie2 = params.genomes[ params.genome ].bowtie2
-params.bowtie_miRBase_mature = params.genomes.bowtie_miRBase_mature
-params.bowtie_miRBase_hairpin = params.genomes.bowtie_miRBase_hairpin
-params.bowtie_rfam = params.genomes.bowtie_rfam
 params.name = "miRNA-Seq Best practice"
 
 // Input files
@@ -49,13 +45,12 @@ params.rlocation = "$HOME/R/nxtflow_libs/"
 nxtflow_libs=file(params.rlocation)
 
 log.info "===================================="
-log.info " RNAbp : Small RNA-Seq Best Practice v${version}"
+log.info " Example Pipeline v${version}"
 log.info "===================================="
 log.info "Reads        : ${params.input}"
 log.info "Genome       : ${params.genome}"
-log.info "Index        : ${params.index}"
+log.info "Index        : ${params.bowtie2}"
 log.info "Annotation   : ${params.gtf}"
-log.info "Rfam         : ${params.bowtie_rfam}"
 log.info "Current home : $HOME"
 log.info "Current user : $USER"
 log.info "Current path : $PWD"
