@@ -1,4 +1,11 @@
 # NGI-NextflowDocs
+
+> ## Depreciation Notice
+>
+> This project has been archived and is no longer maintained. The information contained is likely to be out of date and might be incorrect in some cases.
+>
+> We recommend to have a look at [Nextflow documentation](https://www.nextflow.io/docs/latest/index.html) or at the [nf-core website](https://nf-core.github.io/), or to join the gitter channels for some direct contact with developers: [nextflow channel](https://gitter.im/nextflow-io/nextflow) or [nf-core Lobby](https://gitter.im/nf-core/Lobby).
+
 Common documentation for National Genomics Infrastructure pipelines built with Nextflow. Some variables are specific to Swedish UPPMAX cluster, but can be easily modified to suit any clusters.
 
 ## Install Nextflow
